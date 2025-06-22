@@ -1,0 +1,16 @@
+Recursion is a programming technique where a function calls itself in order to solve a problem. It's a powerful way to handle problems that can be broken down into smaller, self-similar subproblems.
+Recursion provides a very elegant and often more intuitive solution for problems that are inherently recursive, such as:
+- Navigating tree-like data structures (e.g., file systems, organization charts).
+- Mathematical problems like factorials or the Fibonacci sequence.
+- Problems involving "divide and conquer" (like Merge Sort)
+
+Let p be the number of periods.
+The calculateFutureValue function calls itself p times. In each call, it performs a constant number of operations (one multiplication, one addition, one subtraction). Therefore, the total number of operations is directly proportional to p.
+Time Complexity: O(p)
+This is a linear time complexity, which is generally efficient.
+
+
+For this specific problem, the recursive solution is already quite efficient, however, for this specific case:
+1. Memoization (Dynamic Programming)
+Memoization is an optimization technique used to speed up recursive algorithms by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+2. Converting to an Iterative Solution instead of Recursive.

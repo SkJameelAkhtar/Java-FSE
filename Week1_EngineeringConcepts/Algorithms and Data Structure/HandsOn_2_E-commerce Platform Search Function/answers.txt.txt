@@ -1,0 +1,15 @@
+Big O notation is a mathematical notation used in computer science to describe the performance or complexity of an algorithm. It characterizes an algorithm's efficiency by describing how the runtime or memory usage scales as the input size (n) grows.
+
+1. Linear Search: (Checking items one by one in a list)
+- Best Case: O(1) - The item we are searching for is the very first element in the list.
+- Average Case: O(n) - The item is somewhere in the middle of the list. On average, you have to check n/2 elements, which simplifies to O(n).
+- Worst Case: O(n) - The item is the very last element in the list, or it's not in the list at all.
+2. Binary Search: (Requires a sorted list; repeatedly divides the search interval in half)
+- Best Case: O(1) - The item we are searching for is the exact middle element of the list, found on the first check.
+- Average Case: O(log n) - We have to repeatedly halve the search space to find the element.
+- Worst Case: O(log n) - The item is not in the list, or we must keep halving the list until only one element remains. The number of times we can halve n items is log₂n.
+
+
+Binary Search is better for our use case because:
+Performance and User Experience: Search functionality must be instantaneous. A user will not wait several seconds for a search result. O(log n) ensures that even with millions of products, the search operation itself is very quick. An O(n) linear search would be unacceptably slow and lead to a poor user experience.
+Scalability: As the e-commerce platform grows its product catalog, a system built on binary search will continue to perform well. A system using linear search would quickly become unusable.

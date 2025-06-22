@@ -1,0 +1,15 @@
+In a system managing a large inventory (thousands or millions of items), performance is critical. Data structures and algorithms (DSA) are the foundation of this performance. The key points are:
+- Speed
+- Memory Efficiency
+- Scalability
+- Organization
+
+
+Several data structures could be used, each with its own trade-offs:
+Array, HashMap
+
+Hashmap would be a good choice since lookup is very fast as compared to arrays since key can be easily determined.
+HashMap (Our Choice):
+Add (put): Adding an element is an average O(1) operation. The hash function computes the bucket location in constant time. In the rare worst-case scenario (many hash collisions), it can degrade to O(n).
+Update (get then modify): Finding the product by its ID (productId) is an average O(1) operation (get). Modifying the object's attributes is also constant time.
+Delete (remove): Finding the product by ID and removing it is an average O(1) operation.
