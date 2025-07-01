@@ -1,0 +1,15 @@
+Best Case:
+Bubble Sort: O(n) occurs if the array is already sorted and an optimized version of the algorithm is used (which stops if no swaps are made in a pass).
+Quick Sort: O(n log n) occurs when the pivot element consistently divides the array into two roughly equal halves.
+Average Case:
+Bubble Sort: O(n²) is the typical performance on randomly ordered data. For each element, it has to be compared with nearly all other elements.
+Quick Sort: O(n log n) is its typical performance. Even with less-than-perfect pivots, the "divide and conquer" approach is highly efficient.
+Worst Case:
+Bubble Sort: O(n²) occurs when the array is sorted in reverse order, requiring the maximum number of swaps and comparisons.
+Quick Sort: O(n²) occurs when the chosen pivot is consistently the smallest or largest element in the partition (e.g., when sorting an already-sorted array and always picking the last element as the pivot). This leads to highly unbalanced partitions.
+
+
+
+Quick Sort is overwhelmingly preferred over Bubble Sort for several key reasons:
+- Drastically Better Average-Case Performance: The most significant difference is the average time complexity. O(n log n) is vastly superior to O(n²).
+- Efficient "Divide and Conquer" Strategy: Quick Sort works by breaking a large problem into smaller, more manageable sub-problems, which are then solved recursively. This approach is inherently more efficient than Bubble Sort's method of making numerous passes over the entire dataset, swapping adjacent elements
