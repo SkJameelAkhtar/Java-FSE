@@ -1,0 +1,20 @@
+2025-07-06 19:40:58.517 [main] ERROR com.example.LoggingExample - This is an error message
+2025-07-06 19:40:58.519 [main] WARN  com.example.LoggingExample - This is a warning message
+2025-07-06 19:40:58.519 [main] INFO  com.example.LoggingExample - This is an info message.
+2025-07-06 19:40:58.519 [main] DEBUG com.example.LoggingExample - This is a debug message.
+2025-07-06 19:41:14.865 [main] ERROR com.example.LoggingExample - This is an error message
+2025-07-06 19:41:14.866 [main] WARN  com.example.LoggingExample - This is a warning message
+2025-07-06 19:41:14.866 [main] INFO  com.example.LoggingExample - This is an info message.
+2025-07-06 19:41:14.866 [main] DEBUG com.example.LoggingExample - This is a debug message.
+2025-07-06 19:41:50.500 [main] INFO  c.e.ParameterizedLoggingExample - User admin failed to login after 3 attempts.
+2025-07-06 19:41:50.503 [main] WARN  c.e.ParameterizedLoggingExample - Security warning: multiple failed login attempts for user: admin
+2025-07-06 19:41:50.504 [main] ERROR c.e.ParameterizedLoggingExample - An error occurred during operation 'login' for user admin
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:17)
+2025-07-06 19:42:30.664 [main] DEBUG com.example.AppenderExample - This is a debug message for startup configuration.
+2025-07-06 19:42:30.666 [main] INFO  com.example.AppenderExample - Application is starting up.
+2025-07-06 19:42:30.666 [main] WARN  com.example.AppenderExample - A configuration value is missing, using default.
+2025-07-06 19:42:30.667 [main] ERROR com.example.AppenderExample - Failed to connect to the database.
+java.lang.IllegalStateException: DB connection timeout
+	at com.example.AppenderExample.main(AppenderExample.java:13)
+2025-07-06 19:42:30.667 [main] INFO  com.example.AppenderExample - Application has finished processing.
